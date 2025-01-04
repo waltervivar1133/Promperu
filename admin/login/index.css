@@ -1,0 +1,91 @@
+@import "../../shared/styles/variables.css";
+
+body {
+  background-color: var(--color-background);
+  margin: 0;
+}
+
+.header {
+  background-color: var(--color-primary);
+  height: 60px;
+}
+
+.title {
+  font-size: 2.3rem;
+  color: var(--color-text);
+  position: relative;
+  display: inline-block;
+}
+
+.title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 30px;
+  height: 3px;
+  background-color: var(--color-primary);
+  border-radius: 2px;
+}
+
+
+.logo-header {
+  height: 50px;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px var(--color-shadow);
+}
+
+.input-wrapper {
+  position: relative;
+  border-bottom: 1px solid var(--color-primary);
+}
+
+.custom-input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 10px 40px 10px 0;
+  font-size: 16px;
+  color: var(--color-text);
+  background-color: transparent;
+}
+
+.custom-input::placeholder {
+  color: var(--color-placeholder);
+}
+
+.input-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 20px;
+}
+
+.custom-button {
+  height: 50px;
+  font-size: 18px;
+  background-color: var(--color-primary);
+  border: none;
+  border-radius: 5px;
+  color: var(--color-white);
+}
+
+.custom-button:hover {
+  background-color: var(--color-primary-hover);
+}
+
+.text-muted:hover {
+  color: var(--color-primary);
+}
+
+.logo-footer {
+  height: 150px;
+  margin-bottom: 2rem;
+  margin-right: 4rem;
+}
