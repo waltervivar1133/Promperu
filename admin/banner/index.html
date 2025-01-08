@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dashboard</title>
   <link rel="stylesheet" href="../../shared/libraries/bootstrap-5.3.3/css/bootstrap.min.css">
-  <link rel="stylesheet" href="dashboard.css">
+  <link rel="stylesheet" href="banner.css">
 </head>
 
 <body>
@@ -211,7 +211,8 @@
             <div class="col-12 bg-responsive rounded-1 ">
               <div class="row p-3 p-md-5 position-relative">
                 <div class="position-relative d-none d-md-block">
-                  <button class="btn-delete position-absolute ">
+                  <button class="btn-delete position-absolute " data-bs-toggle="modal"
+                    data-bs-target="#deleteConfirmationModal">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x"
                       viewBox="0 0 16 16">
                       <path
@@ -263,7 +264,7 @@
     <!-- Modal para Crear Slider -->
     <div class="modal fade" id="createSliderModal" tabindex="-1" aria-labelledby="createSliderModalLabel"
       aria-hidden="true">
-  <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="createSliderModalLabel">Crear Slider</h5>
@@ -293,7 +294,7 @@
     <!-- Modal para Editar Slider -->
     <div class="modal fade" id="editSliderModal" tabindex="-1" aria-labelledby="editSliderModalLabel"
       aria-hidden="true">
-  <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="editSliderModalLabel">Editar Slider</h5>
@@ -319,6 +320,27 @@
         </div>
       </div>
     </div>
+
+    <!-- Modal de Confirmación para Eliminar -->
+    <div class="modal fade" id="deleteConfirmationModal" tabindex="-1" aria-labelledby="deleteConfirmationModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title " id="deleteConfirmationModalLabel">Confirmar Eliminación</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>¿Estás seguro de que deseas eliminar este slider? Esta acción no se puede deshacer.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-close-modal" data-bs-dismiss="modal">Cancelar</button>
+            <button type="button" id="confirmDeleteButton" class="btn btn-save">Eliminar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
   </div>
   <script src="../../shared/libraries/bootstrap-5.3.3/js/bootstrap.bundle.min.js"></script>
