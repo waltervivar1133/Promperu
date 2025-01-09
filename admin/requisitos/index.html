@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dashboard</title>
   <link rel="stylesheet" href="../../shared/libraries/bootstrap-5.3.3/css/bootstrap.min.css">
-  <link rel="stylesheet" href="banner.css">
+  <link rel="stylesheet" href="requisitos.css">
 </head>
 
 <body>
@@ -200,13 +200,13 @@
               </div>
               <div>
                 <a href="#!">
-                  <span class="second-bread">Banner</span>
+                  <span class="second-bread">Requisitos</span>
                 </a>
               </div>
             </div>
             <div class="col-12 mb-4  d-flex align-items-center justify-content-between ">
               <div class="d-flex align-items-center gap-3">
-                <h2 class="title d-none d-md-block">Edición del Banner</h2>
+                <h2 class="title d-none d-md-block">Edición de requisitos</h2>
                 <h2 class="title d-block d-md-none"> Banners</h2>
                 <span class="badge bg-light text-primary px-4 fs-5 shadow mb-2">1</span>
               </div>
@@ -221,7 +221,7 @@
                     <path
                       d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
                   </svg>
-                  Nuevo slider
+                  Nuevo Requisito
                 </button>
               </div>
             </div>
@@ -255,13 +255,18 @@
                 </div>
 
                 <div class="mb-3">
-                  <label for="description-1" class="form-label fw-semibold" >Descripción</label>
-                  <textarea id="description-1" class="form-control" rows="3" placeholder="Descripción"disabled></textarea>
+                  <label for="image-url-1" class="form-label fw-semibold">Nombre</label>
+                  <input type="text" id="image-url-1" class="form-control" placeholder="Nombre" disabled>
+                </div>
+
+                <div class="mb-3">
+                  <label for="description-1" class="form-label fw-semibold">Descripción</label>
+                  <textarea id="description-1" class="form-control" rows="3" placeholder="Descripción" disabled></textarea>
                 </div>
 
                 <div>
-                  <label for="image-url-1" class="form-label fw-semibold" >URL de la imagen</label>
-                  <input type="text" id="image-url-1" class="form-control" placeholder="URL de la Imagen" disabled>
+                  <label for="image-url-1" class="form-label fw-semibold">URL de ícono</label>
+                  <input type="text" id="image-url-1" class="form-control" placeholder="URL de ícono" disabled>
                 </div>
               </div>
             </div>
@@ -286,18 +291,24 @@
       <div class="modal-dialog modal-lg modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="createSliderModalLabel">Crear Slider</h5>
+            <h5 class="modal-title" id="createSliderModalLabel">Crear requisitos</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
             <form id="createSliderForm">
               <div class="mb-3">
-                <label for="createDescription" class="form-label">Descripción</label>
-                <textarea class="form-control" id="createDescription" rows="3" placeholder="Descripción" required></textarea>
+                <label for="image-url-1" class="form-label fw-semibold">Nombre</label>
+                <input type="text" id="image-url-1" class="form-control" placeholder="Nombre" required>
               </div>
+
               <div class="mb-3">
-                <label for="createImageUrl" class="form-label">URL de la Imagen</label>
-                <input type="text" class="form-control" id="createImageUrl" placeholder="URL de la Imagen" required>
+                <label for="description-1" class="form-label fw-semibold">Descripción</label>
+                <textarea id="description-1" class="form-control" rows="3" placeholder="Descripción" required></textarea>
+              </div>
+
+              <div>
+                <label for="image-url-1" class="form-label fw-semibold">URL de ícono</label>
+                <input type="text" id="image-url-1" class="form-control" placeholder="URL de ícono" required>
               </div>
             </form>
           </div>
@@ -316,18 +327,24 @@
       <div class="modal-dialog modal-lg modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="editSliderModalLabel">Editar Slider</h5>
+            <h5 class="modal-title" id="editSliderModalLabel">Editar requisitos</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
             <form id="editSliderForm">
               <div class="mb-3">
-                <label for="editDescription" class="form-label">Descripción</label>
-                <textarea class="form-control" id="editDescription" rows="3" placeholder="Descripción" required></textarea>
+                <label for="image-url-1" class="form-label fw-semibold">Nombre</label>
+                <input type="text" id="image-url-1" class="form-control" placeholder="Nombre" required>
               </div>
+
               <div class="mb-3">
-                <label for="editImageUrl" class="form-label">URL de la Imagen</label>
-                <input type="text" class="form-control" id="editImageUrl" placeholder="URL de la Imagen" required>
+                <label for="description-1" class="form-label fw-semibold">Descripción</label>
+                <textarea id="description-1" class="form-control" rows="3" placeholder="Descripción" required></textarea>
+              </div>
+
+              <div>
+                <label for="image-url-1" class="form-label fw-semibold">URL de ícono</label>
+                <input type="text" id="image-url-1" class="form-control" placeholder="URL de ícono" required>
               </div>
             </form>
           </div>
@@ -350,7 +367,7 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            <p>¿Estás seguro de que deseas eliminar este slider? Esta acción no se puede deshacer.</p>
+            <p>¿Estás seguro de que deseas eliminar este Requisito? Esta acción no se puede deshacer.</p>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-close-modal" data-bs-dismiss="modal">Cancelar</button>
