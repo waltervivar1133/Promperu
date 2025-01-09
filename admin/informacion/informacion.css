@@ -97,12 +97,12 @@
 }
 
 .btn-save {
-  background-color: var(--red-primary);
+  background-color: var(--color-primary);
   color: var(--color-white);
 }
 
 .btn-save:hover {
-  background-color: var(--red-primary);
+  background-color: var(--color-primary);
   opacity: 0.9;
   color: var(--color-white);
 }
@@ -140,37 +140,7 @@
   box-shadow: none;
 }
 
-.parent-div {
-  position: relative;
-}
 
-.btn-delete {
-  position: absolute;
-  top: -55px;
-  right: -55px;
-  width: 32px;
-  height: 32px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--color-white);
-  border: 1px solid var(--color-white);
-  border-radius: 5%;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
-
-}
-
-.btn-delete:hover {
- opacity: .9;
-}
-
-.btn-delete svg {
-  width: 20px;
-  height: 20px;
-  fill: #18181B;
-
-}
 
 .btn-delete:hover svg {
   fill: #18181B;

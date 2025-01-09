@@ -96,12 +96,12 @@
 }
 
 .btn-save {
-  background-color: var(--red-primary);
+  background-color: var(--color-primary);
   color: var(--color-white);
 }
 
 .btn-save:hover {
-  background-color: var(--red-primary);
+  background-color: var(--color-primary);
   opacity: 0.9;
   color: var(--color-white);
 }
@@ -173,6 +173,29 @@
 
 .btn-delete:hover svg {
   fill: #18181B;
+}
+
+
+.breadcrumb{
+  color: rgba(0, 0, 0, 0.59);
+  font-size: 13px;
+
+}
+
+.breadcrumb .first-bread{
+  font-size: 13px;
+
+  color: rgba(0, 0, 0, 0.59);
+
+}
+.breadcrumb .second-bread{
+  font-size: 13px;
+
+  color: var(--red-primary);
+}
+
+.breadcrumb a {
+  text-decoration: none;
 }
 
 
