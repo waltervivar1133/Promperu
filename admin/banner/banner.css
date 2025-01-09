@@ -1,5 +1,6 @@
 @import "../../shared/styles/variables.css";
 @import "../../shared/styles/header.css";
+@import "../../shared/styles/globals.css";
 
 .header {
   background-color: var(--color-primary);

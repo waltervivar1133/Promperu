@@ -1,5 +1,7 @@
 @import "../../shared/styles/variables.css";
 @import "../../shared/styles/header.css";
+@import "../../shared/styles/globals.css";
+
 
 .header {
   background-color: var(--color-primary);
@@ -144,8 +146,8 @@
 
 .btn-delete {
   position: absolute;
-  top: -60px;
-  right: -60px;
+  top: -55px;
+  right: -55px;
   width: 32px;
   height: 32px;
   display: flex;
@@ -175,8 +177,27 @@
 }
 
 
+.breadcrumb{
+  color: rgba(0, 0, 0, 0.59);
+  font-size: 13px;
 
+}
 
+.breadcrumb .first-bread{
+  font-size: 13px;
+
+  color: rgba(0, 0, 0, 0.59);
+
+}
+.breadcrumb .second-bread{
+  font-size: 13px;
+
+  color: var(--red-primary);
+}
+
+.breadcrumb a {
+  text-decoration: none;
+}
 @media (min-width: 768px) {
   .content {
     padding: 3rem 0;

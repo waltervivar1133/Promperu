@@ -1,7 +1,10 @@
 @import "../../shared/styles/variables.css";
 @import "../../shared/styles/header.css";
+@import "../../shared/styles/globals.css";
+
 
 body {
+  font-family: 'Roboto';
   background-color: var(--color-background);
   margin: 0;
 }
