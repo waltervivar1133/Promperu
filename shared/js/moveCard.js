@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const container = document.querySelector('.container');
+  const container = document.querySelector('.cards-container');
   const sortable = new Sortable(container, {
     animation: 150,
     handle: '.sortable-handle',
@@ -9,9 +9,8 @@ document.addEventListener('DOMContentLoaded', () => {
     },
   });
 
-
   const updateCardNumbers = () => {
-    const cards = container.querySelectorAll('.card-initial');
+    const cards = container.querySelectorAll('.card');
     cards.forEach((card, index) => {
       const cardNumberElement = card.querySelector('.card-number');
       if (cardNumberElement) {
