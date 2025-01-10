@@ -183,7 +183,7 @@
         </div>
       </div>
       <!-- copiar esto -->
-      <div class="content">
+      <div class="content overflow-x-scroll">
         <div class="container">
           <div class="row">
             <div class="breadcrumb px-3 col-12 d-flex align-items-center ">
@@ -208,7 +208,7 @@
               <div class="d-flex align-items-center gap-3">
                 <h2 class="title d-none d-md-block">Edición de requisitos</h2>
                 <h2 class="title d-block d-md-none"> Banners</h2>
-                <span class="badge bg-light text-primary px-4 fs-5 shadow mb-2">1</span>
+           
               </div>
               <div>
 
@@ -225,15 +225,31 @@
                 </button>
               </div>
             </div>
+
+            <div class="container my-3">
+              <div class="col-6">
+                <div class="d-flex justify-content-between">
+                  <label for="image-url-1" class="form-label fw-semibold">Titulo</label>
+                  <a href="#!" class="icon-link" data-bs-toggle="modal" data-bs-target="#editTitle">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.5.5 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11z" />
+                    </svg>
+                  </a>
+                </div>
+                <input type="text" id="image-url-1" class="form-control" placeholder="Titulo" required>
+
+
+              </div>
+            </div>
           </div>
 
-          <div class="col-12 bg-responsive rounded-1 ">
-            <div class="p-3 p-md-5 position-relative">
-
-
-              <div class="card col-12 col-md-6 shadow border-0 p-4">
+          <div class="col-12  rounded-1 card-initial mb-3 ">
+            <div class="position-relative">
+              <div class="card col-12 col-md-12 shadow border-0 p-4">
                 <div class="d-flex justify-content-between align-items-start mb-3">
-                  <h5 class="mb-0">1</h5>
+                  <h5 class="card-number mb-0"></h5>
                   <div class="d-flex gap-2">
                     <button class="btn btn-link text-danger p-0" data-bs-toggle="modal"
                       data-bs-target="#deleteConfirmationModal">
@@ -251,6 +267,14 @@
                           d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.5.5 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11z" />
                       </svg>
                     </button>
+
+                    <div class="sortable-handle d-flex align-items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                        <path
+                          d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0" />
+                      </svg>
+                    </div>
                   </div>
                 </div>
 
@@ -261,7 +285,8 @@
 
                 <div class="mb-3">
                   <label for="description-1" class="form-label fw-semibold">Descripción</label>
-                  <textarea id="description-1" class="form-control" rows="3" placeholder="Descripción" disabled></textarea>
+                  <textarea id="description-1" class="form-control" rows="3" placeholder="Descripción"
+                    disabled></textarea>
                 </div>
 
                 <div>
@@ -270,7 +295,10 @@
                 </div>
               </div>
             </div>
+
+
           </div>
+
 
 
 
@@ -303,7 +331,8 @@
 
               <div class="mb-3">
                 <label for="description-1" class="form-label fw-semibold">Descripción</label>
-                <textarea id="description-1" class="form-control" rows="3" placeholder="Descripción" required></textarea>
+                <textarea id="description-1" class="form-control" rows="3" placeholder="Descripción"
+                  required></textarea>
               </div>
 
               <div>
@@ -320,6 +349,36 @@
         </div>
       </div>
     </div>
+
+    <!-- Modal para editar titulo  -->
+
+
+    <div class="modal fade" id="editTitle" tabindex="-1" aria-labelledby="editTitle" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="editSliderModalLabel">Editar Titulo</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form id="editSliderForm">
+              <div class="mb-3">
+                <label for="description-1" class="form-label fw-semibold">Titulo</label>
+                <input type="text" id="description-1" class="form-control" placeholder="¿Que es?" required>
+              </div>
+
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-close-modal
+            btn-close-modal" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-save" id="saveEditSlider">Guardar Cambios</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
 
     <!-- Modal para Editar Slider -->
     <div class="modal fade" id="editSliderModal" tabindex="-1" aria-labelledby="editSliderModalLabel"
@@ -339,7 +398,8 @@
 
               <div class="mb-3">
                 <label for="description-1" class="form-label fw-semibold">Descripción</label>
-                <textarea id="description-1" class="form-control" rows="3" placeholder="Descripción" required></textarea>
+                <textarea id="description-1" class="form-control" rows="3" placeholder="Descripción"
+                  required></textarea>
               </div>
 
               <div>
@@ -379,19 +439,16 @@
 
   </div>
   </div>
-  <script src="../../shared/libraries/bootstrap-5.3.3/js/bootstrap.bundle.min.js"></script>
-  <script>
-    const menu = document.querySelectorAll('.menu');
-    const sidebar = document.querySelector('.sidebar');
-    const content = document.querySelector('.content');
 
-    menu.forEach((menuBtn) => {
-      menuBtn.addEventListener('click', () => {
-        sidebar.classList.toggle('active');
-        content.classList.toggle('active');
-      });
-    })
-  </script>
+
+
+
+  <script src="../../shared/libraries/sortable/Sortable.min.js"></script>
+
+  <script src="../../shared/libraries/bootstrap-5.3.3/js/bootstrap.bundle.min.js"></script>
+
+  <script src="../../shared/js/menu.js"></script>
+  <script src="../../shared/js/moveCard.js"></script>
 </body>
 
 </html>

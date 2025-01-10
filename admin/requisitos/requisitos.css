@@ -198,6 +198,44 @@
   text-decoration: none;
 }
 
+.input-with-icon {
+  position: relative;
+}
+
+.input-with-icon input {
+  padding-right: 2rem; 
+}
+
+.input-with-icon svg {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none; 
+  fill: var(--red-primary); 
+}
+
+.sortable-handle {
+  cursor: grab;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background-color: #f0f0f0;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sortable-handle:hover {
+  background-color: #e0e0e0;
+}
+
+.sortable-ghost {
+  opacity: 0.5;
+  background-color: #e9ecef;
+}
+
 
 
 

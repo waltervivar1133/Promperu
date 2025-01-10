@@ -120,7 +120,7 @@
 .banner-item h5 {
   font-weight: bold;
   font-size: 32px;
-  opacity: .75;
+  opacity: 0.75;
 }
 
 .button-create {
@@ -130,13 +130,8 @@
   padding: 4px 10px;
 }
 
-.button-create:hover{
+.button-create:hover {
   opacity: 0.9;
-}
-
-.bg-responsive {
-  background-color: transparent;
-  box-shadow: none;
 }
 
 .parent-div {
@@ -157,38 +152,33 @@
   border-radius: 5%;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
   cursor: pointer;
-
 }
 
 .btn-delete:hover {
- opacity: .9;
+  opacity: 0.9;
 }
 
 .btn-delete svg {
   width: 20px;
   height: 20px;
-  fill: #18181B;
-
+  fill: #18181b;
 }
 
 .btn-delete:hover svg {
-  fill: #18181B;
+  fill: #18181b;
 }
 
-
-.breadcrumb{
+.breadcrumb {
   color: rgba(0, 0, 0, 0.59);
   font-size: 13px;
-
 }
 
-.breadcrumb .first-bread{
+.breadcrumb .first-bread {
   font-size: 13px;
 
   color: rgba(0, 0, 0, 0.59);
-
 }
-.breadcrumb .second-bread{
+.breadcrumb .second-bread {
   font-size: 13px;
 
   color: var(--red-primary);
@@ -198,8 +188,26 @@
   text-decoration: none;
 }
 
+.sortable-handle {
+  cursor: grab;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background-color: #f0f0f0;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
+.sortable-handle:hover {
+  background-color: #e0e0e0;
+}
 
+.sortable-ghost {
+  opacity: 0.5;
+  background-color: #e9ecef;
+}
 
 @media (min-width: 768px) {
   .content {
@@ -210,11 +218,4 @@
     justify-content: space-between;
     align-items: flex-start;
   }
-
-  .bg-responsive {
-    background-color: #fff;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
-  }
-
-
 }
