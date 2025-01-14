@@ -1,8 +1,8 @@
 @import "../../shared/styles/variables.css";
 @import "../../shared/styles/header.css";
 @import "../../shared/styles/globals.css";
-@import "../../shared/styles/customButton.css";
-@import "../../shared/styles/switch.css";
+
+
 
 .header {
   background-color: var(--color-primary);
@@ -122,7 +122,7 @@
 .banner-item h5 {
   font-weight: bold;
   font-size: 32px;
-  opacity: 0.75;
+  opacity: .75;
 }
 
 .button-create {
@@ -132,7 +132,7 @@
   padding: 4px 10px;
 }
 
-.button-create:hover {
+.button-create:hover{
   opacity: 0.9;
 }
 
@@ -159,33 +159,38 @@
   border-radius: 5%;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
   cursor: pointer;
+
 }
 
 .btn-delete:hover {
-  opacity: 0.9;
+ opacity: .9;
 }
 
 .btn-delete svg {
   width: 20px;
   height: 20px;
-  fill: #18181b;
+  fill: #18181B;
+
 }
 
 .btn-delete:hover svg {
-  fill: #18181b;
+  fill: #18181B;
 }
 
-.breadcrumb {
+
+.breadcrumb{
   color: rgba(0, 0, 0, 0.59);
   font-size: 13px;
+
 }
 
-.breadcrumb .first-bread {
+.breadcrumb .first-bread{
   font-size: 13px;
 
   color: rgba(0, 0, 0, 0.59);
+
 }
-.breadcrumb .second-bread {
+.breadcrumb .second-bread{
   font-size: 13px;
 
   color: var(--red-primary);
@@ -200,7 +205,7 @@
 }
 
 .input-with-icon input {
-  padding-right: 2rem;
+  padding-right: 2rem; 
 }
 
 .input-with-icon svg {
@@ -208,8 +213,8 @@
   top: 50%;
   right: 10px;
   transform: translateY(-50%);
-  pointer-events: none;
-  fill: var(--red-primary);
+  pointer-events: none; 
+  fill: var(--red-primary); 
 }
 
 .sortable-handle {
@@ -236,8 +241,6 @@
 
 
 
-
-
 @media (min-width: 768px) {
   .content {
     padding: 3rem 0;
@@ -250,6 +253,8 @@
 
   .bg-responsive {
     background-color: #fff;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
   }
+
+
 }
