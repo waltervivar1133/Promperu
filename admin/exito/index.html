@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dashboard</title>
   <link rel="stylesheet" href="../../shared/libraries/bootstrap-5.3.3/css/bootstrap.min.css">
-  <link rel="stylesheet" href="inscripcion.css">
+  <link rel="stylesheet" href="exito.css">
 </head>
 
 <body>
@@ -212,14 +212,14 @@
               </div>
               <div>
                 <a href="#!">
-                  <span class="second-bread">Etapas de inscripción</span>
+                  <span class="second-bread">Casos de éxitos</span>
                 </a>
               </div>
             </div>
             <div class="col-12 mb-4 px-2 px-lg-0 d-flex align-items-center justify-content-between ">
               <div class="d-flex align-items-center gap-3">
-                <h2 class="title d-none d-md-block">Edición de inscripción </h2>
-                <h2 class="title d-block d-md-none"> Inscripción</h2>
+                <h2 class="title d-none d-md-block">Edición de casos de éxitos </h2>
+                <h2 class="title d-block d-md-none"> Éxitos</h2>
 
               </div>
               <div>
@@ -233,7 +233,7 @@
                     <path
                       d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
                   </svg>
-                  Nueva inscripción
+                  Nuevo caso de éxito
                 </button>
               </div>
             </div>
@@ -241,7 +241,7 @@
             <div class="row ">
               <div class="col-md-6 my-3 ">
                 <div class="d-flex justify-content-between">
-                  <label for="image-url-1" class="form-label fw-semibold">Titulo</label>
+                  <label for="image-url-1" class="form-label fw-semibold">Título general</label>
                   <a href="#!" class="icon-link" data-bs-toggle="modal" data-bs-target="#editTitle">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                       class="bi bi-pencil-fill" viewBox="0 0 16 16">
@@ -250,7 +250,7 @@
                     </svg>
                   </a>
                 </div>
-                <input type="text" id="image-url-1" class="form-control" placeholder="Titulo" disabled>
+                <input type="text" id="image-url-1" class="form-control" placeholder="Título general" disabled>
 
               </div>
               <div class="col-md-6 my-3 ">
@@ -264,7 +264,8 @@
                     </svg>
                   </a>
                 </div>
-                <input type="text" id="image-url-1" class="form-control custom-button" placeholder="Nombre del botón" disabled>
+                <input type="text" id="image-url-1" class="form-control custom-button" placeholder="Nombre del botón"
+                  disabled>
 
               </div>
             </div>
@@ -272,8 +273,8 @@
             <div class="row ">
               <div class="col-md-6 my-3 ">
                 <div class="d-flex justify-content-between">
-                  <label for="image-url-1" class="form-label fw-semibold">Descripción</label>
-                  <a href="#!" class="icon-link" data-bs-toggle="modal" data-bs-target="#editDescription">
+                  <label for="image-url-1" class="form-label fw-semibold">URL del video</label>
+                  <a href="#!" class="icon-link" data-bs-toggle="modal" data-bs-target="#editUrlVideo">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                       class="bi bi-pencil-fill" viewBox="0 0 16 16">
                       <path
@@ -282,15 +283,14 @@
                   </a>
                 </div>
 
-                <textarea name="" id="image-url-1" class="form-control" placeholder="Descripción" rows="4"
-                  disabled></textarea>
+                <input type="text" id="image-url-1" class="form-control" placeholder="URL del video" disabled>
 
 
               </div>
               <div class="col-md-6 my-3 ">
                 <div class="d-flex justify-content-between">
-                  <label for="image-url-1" class="form-label fw-semibold">URL ícono de botón</label>
-                  <a href="#!" class="icon-link" data-bs-toggle="modal" data-bs-target="#editIconButton">
+                  <label for="image-url-1" class="form-label fw-semibold">URL del botón</label>
+                  <a href="#!" class="icon-link" data-bs-toggle="modal" data-bs-target="#editUrlButton">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                       class="bi bi-pencil-fill" viewBox="0 0 16 16">
                       <path
@@ -298,9 +298,29 @@
                     </svg>
                   </a>
                 </div>
-                <input type="text" id="image-url-1" class="form-control" placeholder="URL ícono de botón" disabled>
+                <input type="text" id="image-url-1" class="form-control" placeholder="URL del botón" disabled>
 
               </div>
+            </div>
+
+            <div class="row ">
+              <div class="col-md-6 my-3 ">
+                <div class="d-flex justify-content-between">
+                  <label for="image-url-1" class="form-label fw-semibold">Título de video</label>
+                  <a href="#!" class="icon-link" data-bs-toggle="modal" data-bs-target="#editTitleVideo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.5.5 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11z" />
+                    </svg>
+                  </a>
+                </div>
+
+                <input type="text" id="image-url-1" class="form-control" placeholder="Título de video" disabled>
+
+
+              </div>
+
             </div>
           </div>
 
@@ -337,37 +357,31 @@
               </div>
 
               <div class="mb-3">
-                <label for="image-url-1" class="form-label fw-semibold">Paso</label>
+                <label for="image-url-1" class="form-label fw-semibold">Nombre</label>
                 <input type="text" id="image-url-1" class="form-control" placeholder="Paso" disabled>
               </div>
-
-              <div class="mb-3">
-                <label for="image-url-1" class="form-label fw-semibold">Titulo</label>
-                <input type="text" id="image-url-1" class="form-control" placeholder="Titulo" disabled>
-              </div>
-
               <div class="mb-3">
                 <label for="description-1" class="form-label fw-semibold">Descripción</label>
                 <textarea id="description-1" class="form-control" rows="3" placeholder="Descripción"
                   disabled></textarea>
               </div>
 
+              <div class="mb-3">
+                <label for="image-url-1" class="form-label fw-semibold">URL del ícono</label>
+                <input type="text" id="image-url-1" class="form-control" placeholder="URL del ícono" disabled>
+              </div>
+
+              <div class="mb-3">
+                <label for="image-url-1" class="form-label fw-semibold">URL del Perfil</label>
+                <input type="text" id="image-url-1" class="form-control" placeholder="URL del Perfil" disabled>
+              </div>
+
               <div>
-                <label for="image-url-1" class="form-label fw-semibold">URL de la imagen</label>
-                <input type="text" id="image-url-1" class="form-control" placeholder="URL de la imagen" disabled>
+                <label for="image-url-1" class="form-label fw-semibold">URL cabecera</label>
+                <input type="text" id="image-url-1" class="form-control" placeholder="URL cabecera" disabled>
               </div>
             </div>
-
-
-
-
-
-
-
           </div>
-
-
-
 
           <div class="row mt-4">
             <div class="col-12 text-end">
@@ -386,30 +400,34 @@
       <div class="modal-dialog modal-lg modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="createSliderModalLabel">Crear Inscripción</h5>
+            <h5 class="modal-title" id="createSliderModalLabel">Crear caso de éxito</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
             <form id="createSliderForm">
               <div class="mb-3">
-                <label for="image-url-1" class="form-label fw-semibold">Paso</label>
-                <input type="text" id="image-url-1" class="form-control" placeholder="Paso" required>
+                <label for="image-url-1" class="form-label fw-semibold">Nombre</label>
+                <input type="text" id="image-url-1" class="form-control" placeholder="Paso" disabled>
               </div>
-
-              <div class="mb-3">
-                <label for="image-url-1" class="form-label fw-semibold">Titulo</label>
-                <input type="text" id="image-url-1" class="form-control" placeholder="Titulo" required>
-              </div>
-
               <div class="mb-3">
                 <label for="description-1" class="form-label fw-semibold">Descripción</label>
                 <textarea id="description-1" class="form-control" rows="3" placeholder="Descripción"
-                  required></textarea>
+                  disabled></textarea>
+              </div>
+
+              <div class="mb-3">
+                <label for="image-url-1" class="form-label fw-semibold">URL del ícono</label>
+                <input type="text" id="image-url-1" class="form-control" placeholder="URL del ícono" disabled>
+              </div>
+
+              <div class="mb-3">
+                <label for="image-url-1" class="form-label fw-semibold">URL del Perfil</label>
+                <input type="text" id="image-url-1" class="form-control" placeholder="URL del Perfil" disabled>
               </div>
 
               <div>
-                <label for="image-url-1" class="form-label fw-semibold">URL de la imagen</label>
-                <input type="text" id="image-url-1" class="form-control" placeholder="URL de la imagen" required>
+                <label for="image-url-1" class="form-label fw-semibold">URL cabecera</label>
+                <input type="text" id="image-url-1" class="form-control" placeholder="URL cabecera" disabled>
               </div>
             </form>
           </div>
@@ -431,30 +449,34 @@
       <div class="modal-dialog modal-lg modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="editSliderModalLabel">Editar Inscripción</h5>
+            <h5 class="modal-title" id="editSliderModalLabel">Editar caso de éxito</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
             <form id="createSliderForm">
               <div class="mb-3">
-                <label for="image-url-1" class="form-label fw-semibold">Paso</label>
-                <input type="text" id="image-url-1" class="form-control" placeholder="Paso" required>
+                <label for="image-url-1" class="form-label fw-semibold">Nombre</label>
+                <input type="text" id="image-url-1" class="form-control" placeholder="Paso" disabled>
               </div>
-
-              <div class="mb-3">
-                <label for="image-url-1" class="form-label fw-semibold">Titulo</label>
-                <input type="text" id="image-url-1" class="form-control" placeholder="Titulo" required>
-              </div>
-
               <div class="mb-3">
                 <label for="description-1" class="form-label fw-semibold">Descripción</label>
                 <textarea id="description-1" class="form-control" rows="3" placeholder="Descripción"
-                  required></textarea>
+                  disabled></textarea>
+              </div>
+
+              <div class="mb-3">
+                <label for="image-url-1" class="form-label fw-semibold">URL del ícono</label>
+                <input type="text" id="image-url-1" class="form-control" placeholder="URL del ícono" disabled>
+              </div>
+
+              <div class="mb-3">
+                <label for="image-url-1" class="form-label fw-semibold">URL del Perfil</label>
+                <input type="text" id="image-url-1" class="form-control" placeholder="URL del Perfil" disabled>
               </div>
 
               <div>
-                <label for="image-url-1" class="form-label fw-semibold">URL de la imagen</label>
-                <input type="text" id="image-url-1" class="form-control" placeholder="URL de la imagen" required>
+                <label for="image-url-1" class="form-label fw-semibold">URL cabecera</label>
+                <input type="text" id="image-url-1" class="form-control" placeholder="URL cabecera" disabled>
               </div>
             </form>
           </div>
@@ -477,7 +499,7 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            <p>¿Estás seguro de que deseas eliminar esta inscripcion? Esta acción no se puede deshacer.</p>
+            <p>¿Estás seguro de que deseas eliminar este éxito? Esta acción no se puede deshacer.</p>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-close-modal" data-bs-dismiss="modal">Cancelar</button>
@@ -495,14 +517,14 @@
       <div class="modal-dialog modal-lg modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="editSliderModalLabel">Editar Titulo</h5>
+            <h5 class="modal-title" id="editSliderModalLabel">Editar Titulo general</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
             <form id="editSliderForm">
               <div class="mb-3">
-                <label for="description-1" class="form-label fw-semibold">Titulo</label>
-                <input type="text" id="description-1" class="form-control" placeholder="¿Que es?" required>
+                <label for="description-1" class="form-label fw-semibold">Titulo general</label>
+                <input type="text" id="description-1" class="form-control" placeholder="Titulo general" required>
               </div>
 
             </form>
@@ -548,23 +570,23 @@
     </div>
 
 
-    <!-- Modal para descripcion  -->
+    <!-- Modal url de video  -->
 
 
-    <div class="modal fade" id="editDescription" tabindex="-1" aria-labelledby="editDescription" aria-hidden="true">
+    <div class="modal fade" id="editUrlVideo" tabindex="-1" aria-labelledby="editUrlVideo" aria-hidden="true">
       <div class="modal-dialog modal-lg modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="editSliderModalLabel">Editar Descripción</h5>
+            <h5 class="modal-title" id="editSliderModalLabel">Editar Url del video</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
             <form id="editSliderForm">
               <div class="mb-3">
-                <label for="description-1" class="form-label fw-semibold">Descripción
+                <label for="description-1" class="form-label fw-semibold">URL del video
                 </label>
-                <textarea name="" id="image-url-1" class="form-control" placeholder="Descripción" rows="10"
-                  required></textarea>
+                <input type="text" id="description-1" class="form-control" placeholder="URL del video
+                    " required>
               </div>
 
             </form>
@@ -579,24 +601,24 @@
     </div>
 
 
-    <!-- Modal para Url icono de boton  -->
+    <!-- Modal para Url de boton  -->
 
 
-    <div class="modal fade" id="editIconButton" tabindex="-1" aria-labelledby="editIconButton" aria-hidden="true">
+    <div class="modal fade" id="editUrlButton" tabindex="-1" aria-labelledby="editUrlButton" aria-hidden="true">
       <div class="modal-dialog modal-lg modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="editSliderModalLabel">Editar URL ícono de botón
+            <h5 class="modal-title" id="editSliderModalLabel">Editar URL de botón
             </h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
             <form id="editSliderForm">
               <div class="mb-3">
-                <label for="description-1" class="form-label fw-semibold">URL ícono de botón
+                <label for="description-1" class="form-label fw-semibold">URL de botón
 
                 </label>
-                <input type="text" id="description-1" class="form-control" placeholder="URL ícono de botón " required>
+                <input type="text" id="description-1" class="form-control" placeholder="URL  de botón " required>
               </div>
 
             </form>
@@ -604,6 +626,67 @@
           <div class="modal-footer">
             <button type="button" class="btn btn-close-modal
                     btn-close-modal" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-save" id="saveEditSlider">Guardar Cambios</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Modal URL del boton  -->
+
+
+    <div class="modal fade" id="editUrlButton" tabindex="-1" aria-labelledby="editUrlButton" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="editSliderModalLabel">Editar URL del boton</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form id="editSliderForm">
+              <div class="mb-3">
+                <label for="description-1" class="form-label fw-semibold">URL del boton
+                </label>
+                <input type="text" id="description-1" class="form-control" placeholder="URL del boton
+                        " required>
+              </div>
+
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-close-modal
+                    btn-close-modal" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-save" id="saveEditSlider">Guardar Cambios</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Modal titulo del video -->
+
+
+    <div class="modal fade" id="editTitleVideo" tabindex="-1" aria-labelledby="editTitleVideo" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="editSliderModalLabel">Editar titulo del video</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form id="editSliderForm">
+              <div class="mb-3">
+                <label for="description-1" class="form-label fw-semibold">titulo del video
+                </label>
+                <input type="text" id="description-1" class="form-control" placeholder="titulo del video" required>
+              </div>
+
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-close-modal
+                            btn-close-modal" data-bs-dismiss="modal">Cerrar</button>
             <button type="button" class="btn btn-save" id="saveEditSlider">Guardar Cambios</button>
           </div>
         </div>
