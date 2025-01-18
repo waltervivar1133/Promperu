@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dashboard</title>
   <link rel="stylesheet" href="../../shared/libraries/bootstrap-5.3.3/css/bootstrap.min.css">
-  <link rel="stylesheet" href="graduados.css">
+  <link rel="stylesheet" href="contacto.css">
 </head>
 
 <body>
@@ -51,7 +51,7 @@
             </svg>
             My Home
           </button>
-          <div class="collapse" id="my-home">
+          <div class="collapse show" id="my-home">
             <ul class="list-unstyled mt-2">
               <li class="mb-2 active"><a href="#"
                   class="text-decoration-none btn btn-light w-100 d-flex justify-content-between align-items-center">
@@ -212,29 +212,19 @@
               </div>
               <div>
                 <a href="#!">
-                  <span class="second-bread">Graduados</span>
+                  <span class="second-bread">Contacto</span>
                 </a>
               </div>
             </div>
             <div class="col-12 mb-4 px-2 px-lg-0 d-flex align-items-center justify-content-between ">
               <div class="d-flex align-items-center gap-3">
-                <h2 class="title d-none d-md-block">Edición de Empresas Graduadas </h2>
-                <h2 class="title d-block d-md-none"> Graduadas</h2>
+                <h2 class="title d-none d-md-block">Edición de Contacto Home</h2>
+                <h2 class="title d-block d-md-none"> Contacto Home</h2>
 
               </div>
               <div>
 
-                <button class="button-create d-flex align-items-center gap-2 fs-6" data-bs-toggle="modal"
-                  data-bs-target="#createSliderModal">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-plus-square" viewBox="0 0 16 16">
-                    <path
-                      d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
-                    <path
-                      d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
-                  </svg>
-                  Nueva empresa
-                </button>
+
               </div>
             </div>
 
@@ -242,7 +232,7 @@
               <div class="col-md-6 my-3 ">
                 <div class="d-flex justify-content-between">
                   <label for="image-url-1" class="form-label fw-semibold">Título general</label>
-                  <a href="#!" class="icon-link" data-bs-toggle="modal" data-bs-target="#editTitle">
+                  <a href="#!" class="icon-link" data-bs-toggle="modal" data-bs-target="#editGeneral">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                       class="bi bi-pencil-fill" viewBox="0 0 16 16">
                       <path
@@ -251,12 +241,12 @@
                   </a>
                 </div>
                 <input type="text" id="image-url-1" class="form-control" placeholder="Título general" disabled>
-
               </div>
+
               <div class="col-md-6 my-3 ">
                 <div class="d-flex justify-content-between">
-                  <label for="image-url-1" class="form-label fw-semibold">Boton</label>
-                  <a href="#!" class="icon-link" data-bs-toggle="modal" data-bs-target="#editNameButton">
+                  <label for="image-url-1" class="form-label fw-semibold">URL de la imagen</label>
+                  <a href="#!" class="icon-link" data-bs-toggle="modal" data-bs-target="#editGeneral">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                       class="bi bi-pencil-fill" viewBox="0 0 16 16">
                       <path
@@ -264,7 +254,40 @@
                     </svg>
                   </a>
                 </div>
-                <input type="text" id="image-url-1" class="form-control custom-button" placeholder="Boton" disabled>
+                <input type="text" id="image-url-1" class="form-control" placeholder="URL de la imagen" disabled>
+              </div>
+
+            </div>
+
+            <div class="row ">
+              <div class="col-md-6 my-3 ">
+                <div class="d-flex justify-content-between">
+                  <label for="image-url-1" class="form-label fw-semibold">Título Home</label>
+                  <a href="#!" class="icon-link" data-bs-toggle="modal" data-bs-target="#editGeneral">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.5.5 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11z" />
+                    </svg>
+                  </a>
+                </div>
+
+                <input type="text" id="image-url-1" class="form-control" placeholder="Título Home" disabled>
+
+
+              </div>
+              <div class="col-md-6 my-3 ">
+                <div class="d-flex justify-content-between">
+                  <label for="image-url-1" class="form-label fw-semibold">Horario</label>
+                  <a href="#!" class="icon-link" data-bs-toggle="modal" data-bs-target="#editGeneral">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.5.5 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11z" />
+                    </svg>
+                  </a>
+                </div>
+                <input type="text" id="image-url-1" class="form-control" placeholder="Horario" disabled>
 
               </div>
             </div>
@@ -272,8 +295,8 @@
             <div class="row ">
               <div class="col-md-6 my-3 ">
                 <div class="d-flex justify-content-between">
-                  <label for="image-url-1" class="form-label fw-semibold">URL del botón</label>
-                  <a href="#!" class="icon-link" data-bs-toggle="modal" data-bs-target="#editUrlVideo">
+                  <label for="image-url-1" class="form-label fw-semibold">Correo</label>
+                  <a href="#!" class="icon-link" data-bs-toggle="modal" data-bs-target="#editGeneral">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                       class="bi bi-pencil-fill" viewBox="0 0 16 16">
                       <path
@@ -282,29 +305,68 @@
                   </a>
                 </div>
 
-                <input type="text" id="image-url-1" class="form-control" placeholder="URL del botón" disabled>
-              </div>
+                <input type="text" id="image-url-1" class="form-control" placeholder="Correo" disabled>
 
+
+              </div>
+              <div class="col-md-6 my-3 ">
+                <div class="d-flex justify-content-between">
+                  <label for="image-url-1" class="form-label fw-semibold">URL de la imagen</label>
+                  <a href="#!" class="icon-link" data-bs-toggle="modal" data-bs-target="#editGeneral">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.5.5 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11z" />
+                    </svg>
+                  </a>
+                </div>
+                <input type="text" id="image-url-1" class="form-control" placeholder="URL de la imagen" disabled>
+
+              </div>
             </div>
 
+            <div class="row ">
+              <div class="col-md-6 my-3 ">
+                <div class="d-flex justify-content-between">
+                  <label for="image-url-1" class="form-label fw-semibold">Teléfono</label>
+                  <a href="#!" class="icon-link" data-bs-toggle="modal" data-bs-target="#editGeneral">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.5.5 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11z" />
+                    </svg>
+                  </a>
+                </div>
 
+                <input type="number" id="image-url-1" class="form-control" placeholder="Teléfono" disabled>
+              </div>
+
+              <div class="col-md-6 my-3 ">
+                <div class="d-flex justify-content-between">
+                  <label for="image-url-1" class="form-label fw-semibold">Nombre del botón</label>
+                  <a href="#!" class="icon-link" data-bs-toggle="modal" data-bs-target="#editGeneral">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.5.5 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11z" />
+                    </svg>
+                  </a>
+                </div>
+                <input type="text" id="image-url-1" class="form-control custom-button" placeholder="Nombre del botón"
+                  disabled>
+
+              </div>
+            </div>
           </div>
 
           <div class="row cards-container px-2 px-md-0 ">
             <div class="card col-12 col-md-12 shadow border-0 p-4 mb-3">
               <div class="d-flex justify-content-between align-items-start mb-3">
-                <h5 class="card-number mb-0"></h5>
+                <h5 class=" mb-0">Contáctanos Vista</h5>
                 <div class="d-flex gap-2">
-                  <button class="btn btn-link text-danger p-0" data-bs-toggle="modal"
-                    data-bs-target="#deleteConfirmationModal">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                      class="bi bi-trash-fill" viewBox="0 0 16 16">
-                      <path
-                        d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5M8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5m3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0" />
-                    </svg>
-                  </button>
+
                   <button class="btn btn-link text-primary p-0" data-bs-toggle="modal"
-                    data-bs-target="#editSliderModal">
+                    data-bs-target="#editContactoVista">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                       class="bi bi-pencil-fill" viewBox="0 0 16 16">
                       <path
@@ -312,12 +374,21 @@
                     </svg>
                   </button>
 
-                  <div class="sortable-handle d-flex align-items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                      class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
-                      <path
-                        d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0" />
-                    </svg>
+
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="mb-3">
+                    <label for="image-url-1" class="form-label fw-semibold">Título</label>
+                    <input type="text" id="image-url-1" class="form-control" placeholder="Título  " disabled>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="mb-3">
+                    <label for="description-1" class="form-label fw-semibold">Nombres</label>
+                    <input type="text" id="image-url-1" class="form-control" placeholder="Nombres" disabled>
                   </div>
                 </div>
               </div>
@@ -326,10 +397,46 @@
               <div class="row">
                 <div class="col-md-6">
                   <div class="mb-3">
-                    <label for="image-url-1" class="form-label fw-semibold">Nombre Comercial</label>
-                    <input type="text" id="image-url-1" class="form-control" placeholder="Nombre Comercial" disabled>
+                    <label for="image-url-1" class="form-label fw-semibold">Apellidos</label>
+                    <input type="text" id="image-url-1" class="form-control" placeholder="Apellidos" disabled>
                   </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="mb-3">
+                    <label for="description-1" class="form-label fw-semibold">Correo electrónico</label>
+                    <input type="text" id="image-url-1" class="form-control" placeholder="Correo electrónico" disabled>
+                  </div>
+                </div>
+              </div>
 
+
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="mb-3">
+                    <label for="image-url-1" class="form-label fw-semibold">Celular</label>
+                    <input type="text" id="image-url-1" class="form-control" placeholder="Celular" disabled>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="mb-3">
+                    <label for="description-1" class="form-label fw-semibold">RUC</label>
+                    <input type="text" id="image-url-1" class="form-control" placeholder="RUC" disabled>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="mb-3">
+                    <label for="image-url-1" class="form-label fw-semibold">Tipo de empresa</label>
+                    <select class="form-select" aria-label="Default select example" disabled>
+                      <option selected>Tipo de empresa</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
                 </div>
                 <div class="col-md-6">
                   <div class="mb-3">
@@ -347,14 +454,75 @@
               <div class="row">
                 <div class="col-md-6">
                   <div class="mb-3">
-                    <label for="image-url-1" class="form-label fw-semibold">Correo Electronico</label>
-                    <input type="text" id="image-url-1" class="form-control" placeholder="Correo Electronico" disabled>
+                    <label for="image-url-1" class="form-label fw-semibold">Dejanos su mensaje</label>
+                    <textarea id="description-1" class="form-control" rows="3" placeholder="Dejanos su mensaje"
+                      disabled></textarea>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="mb-3">
-                    <label for="image-url-1" class="form-label fw-semibold">Página web</label>
-                    <input type="text" id="image-url-1" class="form-control" placeholder="Página web" disabled>
+                    <label for="description-1" class="form-label fw-semibold">Celular</label>
+                    <input type="text" id="image-url-1" class="form-control mb-2" placeholder="Escriba su consulta"
+                      disabled>
+                    <input type="text" id="image-url-1" class="form-control"
+                      placeholder="Al darle clic en “enviar mensaje ” acepto la política de protección de datos personales"
+                      disabled>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="mb-3">
+                    <label for="image-url-1" class="form-label fw-semibold">Nombre del botón</label>
+                    <input type="text" id="image-url-1" class="form-control custom-button"
+                      placeholder="Nombre del botón" disabled>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="mb-3">
+                    <label for="description-1" class="form-label fw-semibold">URL del botón</label>
+                    <input type="text" id="image-url-1" class="form-control" placeholder="URL del botón" disabled>
+
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+
+
+            <div class="card col-12 col-md-12 shadow border-0 p-4 mb-3">
+              <div class="d-flex justify-content-between align-items-start mb-3">
+                <h5 class=" mb-0">Contáctanos configuración</h5>
+                <div class="d-flex gap-2">
+
+                  <button class="btn btn-link text-primary p-0" data-bs-toggle="modal"
+                    data-bs-target="#editContactConfig">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.5.5 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11z" />
+                    </svg>
+                  </button>
+
+
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="mb-3">
+                    <label for="image-url-1" class="form-label fw-semibold">Título Banner</label>
+                    <input type="text" id="image-url-1" class="form-control" placeholder="Título Banner  " disabled>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="mb-3">
+                    <label for="description-1" class="form-label fw-semibold">URL de imagen Banner</label>
+                    <input type="text" id="image-url-1" class="form-control" placeholder="URL de imagen Banner"
+                      disabled>
                   </div>
                 </div>
               </div>
@@ -363,34 +531,15 @@
               <div class="row">
                 <div class="col-md-6">
                   <div class="mb-3">
-                    <label for="image-url-1" class="form-label fw-semibold">RUC</label>
-                    <input type="text" id="image-url-1" class="form-control" placeholder="RUC" disabled>
+                    <label for="image-url-1" class="form-label fw-semibold">Nombre Banner Medio</label>
+                    <input type="text" id="image-url-1" class="form-control" placeholder="Nombre Banner Medio" disabled>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="mb-3">
-                    <label for="image-url-1" class="form-label fw-semibold">Redes sociales</label>
-                    <select class="form-select" aria-label="Default select example" disabled>
-                      <option selected>Redes sociales</option>
-                      <option value="1">One</option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="mb-3">
-                    <label for="image-url-1" class="form-label fw-semibold">Tipo de empresa</label>
-                    <input type="text" id="image-url-1" class="form-control" placeholder="Tipo de empresa" disabled>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="mb-3">
-                    <label for="image-url-1" class="form-label fw-semibold">Certificaciones</label>
-                    <input type="text" id="image-url-1" class="form-control" placeholder="Certificaciones" disabled>
+                    <label for="description-1" class="form-label fw-semibold">Descripción</label>
+                    <textarea id="description-1" class="form-control" rows="3" placeholder="Descripción"
+                      disabled></textarea>
                   </div>
                 </div>
               </div>
@@ -399,19 +548,16 @@
               <div class="row">
                 <div class="col-md-6">
                   <div class="mb-3">
-                    <label for="image-url-1" class="form-label fw-semibold">URL de la Logo</label>
-                    <input type="text" id="image-url-1" class="form-control" placeholder="URL de la Logo" disabled>
+                    <label for="image-url-1" class="form-label fw-semibold">Correo electrónico</label>
+                    <input type="text" id="image-url-1" class="form-control" placeholder="Correo electrónico" disabled>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="mb-3">
-                    <label for="image-url-1" class="form-label fw-semibold">Mercados</label>
-                    <select class="form-select" aria-label="Default select example" disabled>
-                      <option selected>Mercados</option>
-                      <option value="1">One</option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
-                    </select>
+                    <label for="description-1" class="form-label fw-semibold">URL ícono para correo electrónico</label>
+                    <input type="text" id="image-url-1" class="form-control"
+                      placeholder="URL ícono para correo electrónico" disabled>
+
                   </div>
                 </div>
               </div>
@@ -420,14 +566,32 @@
               <div class="row">
                 <div class="col-md-6">
                   <div class="mb-3">
-                    <label for="image-url-1" class="form-label fw-semibold">Razon social</label>
-                    <input type="text" id="image-url-1" class="form-control" placeholder="Razon social" disabled>
+                    <label for="image-url-1" class="form-label fw-semibold">Low Título</label>
+                    <input type="text" id="image-url-1" class="form-control" placeholder="Low Título" disabled>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="mb-3">
-                    <label for="image-url-1" class="form-label fw-semibold">Segmentos atendidos</label>
-                    <input type="text" id="image-url-1" class="form-control" placeholder="Segmentos atendidos" disabled>
+                    <label for="image-url-1" class="form-label fw-semibold">subtítulo</label>
+                    <input type="text" id="image-url-1" class="form-control" placeholder="subtítulo" disabled>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="mb-3">
+                    <label for="image-url-1" class="form-label fw-semibold">Nombre del primer botón</label>
+                    <input type="text" id="image-url-1" class="form-control " placeholder="Nombre del primer botón"
+                      disabled>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="mb-3">
+                    <label for="description-1" class="form-label fw-semibold">URL del ícono del primer botón</label>
+                    <input type="text" id="image-url-1" class="form-control"
+                      placeholder="URL del ícono del primer botón" disabled>
+
                   </div>
                 </div>
               </div>
@@ -436,12 +600,21 @@
               <div class="row">
                 <div class="col-md-6">
                   <div class="mb-3">
-                    <label for="image-url-1" class="form-label fw-semibold">Dirección</label>
-                    <input type="text" id="image-url-1" class="form-control" placeholder="Dirección" disabled>
+                    <label for="image-url-1" class="form-label fw-semibold">Nombre del segundo botón</label>
+                    <input type="text" id="image-url-1" class="form-control custom-button"
+                      placeholder="Nombre del segundo botón" disabled>
                   </div>
                 </div>
+                <div class="col-md-6">
+                  <div class="mb-3">
+                    <label for="description-1" class="form-label fw-semibold">URL del ícono del segundo botón</label>
+                    <input type="text" id="image-url-1" class="form-control"
+                      placeholder="URL del ícono del segundo botón" disabled>
 
+                  </div>
+                </div>
               </div>
+
 
             </div>
           </div>
@@ -457,13 +630,12 @@
     </div>
 
 
-    <!-- Modal para Crear  -->
-    <div class="modal fade" id="createSliderModal" tabindex="-1" aria-labelledby="createSliderModalLabel"
-      aria-hidden="true">
+    <!-- Modal para editar contacto vista  -->
+    <div class="modal fade" id="editContactoVista" tabindex="-1" aria-labelledby="editContactoVista" aria-hidden="true">
       <div class="modal-dialog modal-lg modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="createSliderModalLabel">Crear empresa</h5>
+            <h5 class="modal-title" id="createSliderModalLabel">Contacto Vista</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
@@ -471,15 +643,67 @@
               <div class="row">
                 <div class="col-md-6">
                   <div class="mb-3">
-                    <label for="image-url-1" class="form-label fw-semibold">Nombre Comercial</label>
-                    <input type="text" id="image-url-1" class="form-control" placeholder="Nombre Comercial" >
+                    <label for="image-url-1" class="form-label fw-semibold">Título</label>
+                    <input type="text" id="image-url-1" class="form-control" placeholder="Título  " disabled>
                   </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="mb-3">
+                    <label for="description-1" class="form-label fw-semibold">Nombres</label>
+                    <input type="text" id="image-url-1" class="form-control" placeholder="Nombres" disabled>
+                  </div>
+                </div>
+              </div>
 
+
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="mb-3">
+                    <label for="image-url-1" class="form-label fw-semibold">Apellidos</label>
+                    <input type="text" id="image-url-1" class="form-control" placeholder="Apellidos" disabled>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="mb-3">
+                    <label for="description-1" class="form-label fw-semibold">Correo electrónico</label>
+                    <input type="text" id="image-url-1" class="form-control" placeholder="Correo electrónico" disabled>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="mb-3">
+                    <label for="image-url-1" class="form-label fw-semibold">Celular</label>
+                    <input type="text" id="image-url-1" class="form-control" placeholder="Celular" disabled>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="mb-3">
+                    <label for="description-1" class="form-label fw-semibold">RUC</label>
+                    <input type="text" id="image-url-1" class="form-control" placeholder="RUC" disabled>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="mb-3">
+                    <label for="image-url-1" class="form-label fw-semibold">Tipo de empresa</label>
+                    <select class="form-select" aria-label="Default select example" disabled>
+                      <option selected>Tipo de empresa</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
                 </div>
                 <div class="col-md-6">
                   <div class="mb-3">
                     <label for="description-1" class="form-label fw-semibold">Región</label>
-                    <select class="form-select" aria-label="Default select example" >
+                    <select class="form-select" aria-label="Default select example" disabled>
                       <option selected>Región</option>
                       <option value="1">One</option>
                       <option value="2">Two</option>
@@ -492,35 +716,20 @@
               <div class="row">
                 <div class="col-md-6">
                   <div class="mb-3">
-                    <label for="image-url-1" class="form-label fw-semibold">Correo Electronico</label>
-                    <input type="text" id="image-url-1" class="form-control" placeholder="Correo Electronico" >
+                    <label for="image-url-1" class="form-label fw-semibold">Dejanos su mensaje</label>
+                    <textarea id="description-1" class="form-control" rows="3" placeholder="Dejanos su mensaje"
+                      disabled></textarea>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="mb-3">
-                    <label for="image-url-1" class="form-label fw-semibold">Página web</label>
-                    <input type="text" id="image-url-1" class="form-control" placeholder="Página web" >
-                  </div>
-                </div>
-              </div>
+                    <label for="description-1" class="form-label fw-semibold">Celular</label>
+                    <input type="text" id="image-url-1" class="form-control mb-2" placeholder="Escriba su consulta"
+                      disabled>
+                    <input type="text" id="image-url-1" class="form-control"
+                      placeholder="Al darle clic en “enviar mensaje ” acepto la política de protección de datos personales"
+                      disabled>
 
-
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="mb-3">
-                    <label for="image-url-1" class="form-label fw-semibold">RUC</label>
-                    <input type="text" id="image-url-1" class="form-control" placeholder="RUC" >
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="mb-3">
-                    <label for="image-url-1" class="form-label fw-semibold">Redes sociales</label>
-                    <select class="form-select" aria-label="Default select example" >
-                      <option selected>Redes sociales</option>
-                      <option value="1">One</option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
-                    </select>
                   </div>
                 </div>
               </div>
@@ -528,64 +737,18 @@
               <div class="row">
                 <div class="col-md-6">
                   <div class="mb-3">
-                    <label for="image-url-1" class="form-label fw-semibold">Tipo de empresa</label>
-                    <input type="text" id="image-url-1" class="form-control" placeholder="Tipo de empresa" >
+                    <label for="image-url-1" class="form-label fw-semibold">Nombre del botón</label>
+                    <input type="text" id="image-url-1" class="form-control custom-button"
+                      placeholder="Nombre del botón" disabled>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="mb-3">
-                    <label for="image-url-1" class="form-label fw-semibold">Certificaciones</label>
-                    <input type="text" id="image-url-1" class="form-control" placeholder="Certificaciones" >
+                    <label for="description-1" class="form-label fw-semibold">URL del botón</label>
+                    <input type="text" id="image-url-1" class="form-control" placeholder="URL del botón" disabled>
+
                   </div>
                 </div>
-              </div>
-
-
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="mb-3">
-                    <label for="image-url-1" class="form-label fw-semibold">URL de la Logo</label>
-                    <input type="text" id="image-url-1" class="form-control" placeholder="URL de la Logo" >
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="mb-3">
-                    <label for="image-url-1" class="form-label fw-semibold">Mercados</label>
-                    <select class="form-select" aria-label="Default select example" >
-                      <option selected>Mercados</option>
-                      <option value="1">One</option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-
-
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="mb-3">
-                    <label for="image-url-1" class="form-label fw-semibold">Razon social</label>
-                    <input type="text" id="image-url-1" class="form-control" placeholder="Razon social" >
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="mb-3">
-                    <label for="image-url-1" class="form-label fw-semibold">Segmentos atendidos</label>
-                    <input type="text" id="image-url-1" class="form-control" placeholder="Segmentos atendidos" >
-                  </div>
-                </div>
-              </div>
-
-
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="mb-3">
-                    <label for="image-url-1" class="form-label fw-semibold">Dirección</label>
-                    <input type="text" id="image-url-1" class="form-control" placeholder="Dirección" >
-                  </div>
-                </div>
-
               </div>
             </form>
           </div>
@@ -601,13 +764,14 @@
 
 
 
-    <!-- Modal para Editar Slider -->
-    <div class="modal fade" id="editSliderModal" tabindex="-1" aria-labelledby="editSliderModalLabel"
+    <!-- Modal para editar contacto configuracion -->
+    <div class="modal fade" id="editContactConfig" tabindex="-1" aria-labelledby="editContactConfigLabel"
       aria-hidden="true">
       <div class="modal-dialog modal-lg modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="editSliderModalLabel">Editar caso de éxito</h5>
+            <h5 class="modal-title" id="editSliderModalLabel">Editar Contáctanos configuración
+            </h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
@@ -615,35 +779,15 @@
               <div class="row">
                 <div class="col-md-6">
                   <div class="mb-3">
-                    <label for="image-url-1" class="form-label fw-semibold">Nombre Comercial</label>
-                    <input type="text" id="image-url-1" class="form-control" placeholder="Nombre Comercial" >
-                  </div>
-
-                </div>
-                <div class="col-md-6">
-                  <div class="mb-3">
-                    <label for="description-1" class="form-label fw-semibold">Región</label>
-                    <select class="form-select" aria-label="Default select example" >
-                      <option selected>Región</option>
-                      <option value="1">One</option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="mb-3">
-                    <label for="image-url-1" class="form-label fw-semibold">Correo Electronico</label>
-                    <input type="text" id="image-url-1" class="form-control" placeholder="Correo Electronico" >
+                    <label for="image-url-1" class="form-label fw-semibold">Título Banner</label>
+                    <input type="text" id="image-url-1" class="form-control" placeholder="Título Banner  " disabled>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="mb-3">
-                    <label for="image-url-1" class="form-label fw-semibold">Página web</label>
-                    <input type="text" id="image-url-1" class="form-control" placeholder="Página web" >
+                    <label for="description-1" class="form-label fw-semibold">URL de imagen Banner</label>
+                    <input type="text" id="image-url-1" class="form-control" placeholder="URL de imagen Banner"
+                      disabled>
                   </div>
                 </div>
               </div>
@@ -652,34 +796,15 @@
               <div class="row">
                 <div class="col-md-6">
                   <div class="mb-3">
-                    <label for="image-url-1" class="form-label fw-semibold">RUC</label>
-                    <input type="text" id="image-url-1" class="form-control" placeholder="RUC" >
+                    <label for="image-url-1" class="form-label fw-semibold">Nombre Banner Medio</label>
+                    <input type="text" id="image-url-1" class="form-control" placeholder="Nombre Banner Medio" disabled>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="mb-3">
-                    <label for="image-url-1" class="form-label fw-semibold">Redes sociales</label>
-                    <select class="form-select" aria-label="Default select example" >
-                      <option selected>Redes sociales</option>
-                      <option value="1">One</option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="mb-3">
-                    <label for="image-url-1" class="form-label fw-semibold">Tipo de empresa</label>
-                    <input type="text" id="image-url-1" class="form-control" placeholder="Tipo de empresa" >
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="mb-3">
-                    <label for="image-url-1" class="form-label fw-semibold">Certificaciones</label>
-                    <input type="text" id="image-url-1" class="form-control" placeholder="Certificaciones" >
+                    <label for="description-1" class="form-label fw-semibold">Descripción</label>
+                    <textarea id="description-1" class="form-control" rows="3" placeholder="Descripción"
+                      disabled></textarea>
                   </div>
                 </div>
               </div>
@@ -688,19 +813,16 @@
               <div class="row">
                 <div class="col-md-6">
                   <div class="mb-3">
-                    <label for="image-url-1" class="form-label fw-semibold">URL de la Logo</label>
-                    <input type="text" id="image-url-1" class="form-control" placeholder="URL de la Logo" >
+                    <label for="image-url-1" class="form-label fw-semibold">Correo electrónico</label>
+                    <input type="text" id="image-url-1" class="form-control" placeholder="Correo electrónico" disabled>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="mb-3">
-                    <label for="image-url-1" class="form-label fw-semibold">Mercados</label>
-                    <select class="form-select" aria-label="Default select example" >
-                      <option selected>Mercados</option>
-                      <option value="1">One</option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
-                    </select>
+                    <label for="description-1" class="form-label fw-semibold">URL ícono para correo electrónico</label>
+                    <input type="text" id="image-url-1" class="form-control"
+                      placeholder="URL ícono para correo electrónico" disabled>
+
                   </div>
                 </div>
               </div>
@@ -709,14 +831,32 @@
               <div class="row">
                 <div class="col-md-6">
                   <div class="mb-3">
-                    <label for="image-url-1" class="form-label fw-semibold">Razon social</label>
-                    <input type="text" id="image-url-1" class="form-control" placeholder="Razon social" >
+                    <label for="image-url-1" class="form-label fw-semibold">Low Título</label>
+                    <input type="text" id="image-url-1" class="form-control" placeholder="Low Título" disabled>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="mb-3">
-                    <label for="image-url-1" class="form-label fw-semibold">Segmentos atendidos</label>
-                    <input type="text" id="image-url-1" class="form-control" placeholder="Segmentos atendidos" >
+                    <label for="image-url-1" class="form-label fw-semibold">subtítulo</label>
+                    <input type="text" id="image-url-1" class="form-control" placeholder="subtítulo" disabled>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="mb-3">
+                    <label for="image-url-1" class="form-label fw-semibold">Nombre del primer botón</label>
+                    <input type="text" id="image-url-1" class="form-control " placeholder="Nombre del primer botón"
+                      disabled>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="mb-3">
+                    <label for="description-1" class="form-label fw-semibold">URL del ícono del primer botón</label>
+                    <input type="text" id="image-url-1" class="form-control"
+                      placeholder="URL del ícono del primer botón" disabled>
+
                   </div>
                 </div>
               </div>
@@ -725,12 +865,21 @@
               <div class="row">
                 <div class="col-md-6">
                   <div class="mb-3">
-                    <label for="image-url-1" class="form-label fw-semibold">Dirección</label>
-                    <input type="text" id="image-url-1" class="form-control" placeholder="Dirección" >
+                    <label for="image-url-1" class="form-label fw-semibold">Nombre del segundo botón</label>
+                    <input type="text" id="image-url-1" class="form-control custom-button"
+                      placeholder="Nombre del segundo botón" disabled>
                   </div>
                 </div>
-               
+                <div class="col-md-6">
+                  <div class="mb-3">
+                    <label for="description-1" class="form-label fw-semibold">URL del ícono del segundo botón</label>
+                    <input type="text" id="image-url-1" class="form-control"
+                      placeholder="URL del ícono del segundo botón" disabled>
+
+                  </div>
+                </div>
               </div>
+
             </form>
           </div>
           <div class="modal-footer">
@@ -742,70 +891,104 @@
       </div>
     </div>
 
-    <!-- Modal de Confirmación para Eliminar -->
-    <div class="modal fade" id="deleteConfirmationModal" tabindex="-1" aria-labelledby="deleteConfirmationModalLabel"
-      aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title " id="deleteConfirmationModalLabel">Confirmar Eliminación</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <p>¿Estás seguro de que deseas eliminar esta empresa? Esta acción no se puede deshacer.</p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-close-modal" data-bs-dismiss="modal">Cancelar</button>
-            <button type="button" id="confirmDeleteButton" class="btn btn-save">Eliminar</button>
-          </div>
-        </div>
-      </div>
-    </div>
 
 
-    <!-- Modal para editar titulo  -->
+
+    <!-- Modal para general  -->
 
 
-    <div class="modal fade" id="editTitle" tabindex="-1" aria-labelledby="editTitle" aria-hidden="true">
+    <div class="modal fade" id="editGeneral" tabindex="-1" aria-labelledby="editTitle" aria-hidden="true">
       <div class="modal-dialog modal-lg modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="editSliderModalLabel">Editar Titulo general</h5>
+            <h5 class="modal-title" id="editSliderModalLabel">Editar Todo</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
             <form id="editSliderForm">
-              
-            <div class="row ">
-              <div class="col-md-6 my-3 ">
-                <div class="d-flex justify-content-between">
-                  <label for="image-url-1" class="form-label fw-semibold">Título general</label>
-                 
-                </div>
-                <input type="text" id="image-url-1" class="form-control" placeholder="Título general" disabled>
 
-              </div>
-              <div class="col-md-6 my-3 ">
-                <div class="d-flex justify-content-between">
-                  <label for="image-url-1" class="form-label fw-semibold">Boton</label>
-                 
-                </div>
-                <input type="text" id="image-url-1" class="form-control custom-button" placeholder="Boton" disabled>
 
-              </div>
-            </div>
+              <div class="row ">
+                <div class="col-md-6 my-3 ">
+                  <div class="d-flex justify-content-between">
+                    <label for="image-url-1" class="form-label fw-semibold">Título general</label>
 
-            <div class="row ">
-              <div class="col-md-6 my-3 ">
-                <div class="d-flex justify-content-between">
-                  <label for="image-url-1" class="form-label fw-semibold">URL del botón</label>
-                  
+                  </div>
+                  <input type="text" id="image-url-1" class="form-control" placeholder="Título general" disabled>
                 </div>
 
-                <input type="text" id="image-url-1" class="form-control" placeholder="URL del botón" disabled>
+                <div class="col-md-6 my-3 ">
+                  <div class="d-flex justify-content-between">
+                    <label for="image-url-1" class="form-label fw-semibold">URL de la imagen</label>
+
+                  </div>
+                  <input type="text" id="image-url-1" class="form-control" placeholder="URL de la imagen" disabled>
+                </div>
+
               </div>
 
-            </div>
+              <div class="row ">
+                <div class="col-md-6 my-3 ">
+                  <div class="d-flex justify-content-between">
+                    <label for="image-url-1" class="form-label fw-semibold">Título Home</label>
+
+                  </div>
+
+                  <input type="text" id="image-url-1" class="form-control" placeholder="Título Home" disabled>
+
+
+                </div>
+                <div class="col-md-6 my-3 ">
+                  <div class="d-flex justify-content-between">
+                    <label for="image-url-1" class="form-label fw-semibold">Horario</label>
+
+                  </div>
+                  <input type="text" id="image-url-1" class="form-control" placeholder="Horario" disabled>
+
+                </div>
+              </div>
+
+              <div class="row ">
+                <div class="col-md-6 my-3 ">
+                  <div class="d-flex justify-content-between">
+                    <label for="image-url-1" class="form-label fw-semibold">Correo</label>
+
+                  </div>
+
+                  <input type="text" id="image-url-1" class="form-control" placeholder="Correo" disabled>
+
+
+                </div>
+                <div class="col-md-6 my-3 ">
+                  <div class="d-flex justify-content-between">
+                    <label for="image-url-1" class="form-label fw-semibold">URL de la imagen</label>
+
+                  </div>
+                  <input type="text" id="image-url-1" class="form-control" placeholder="URL de la imagen" disabled>
+
+                </div>
+              </div>
+
+              <div class="row ">
+                <div class="col-md-6 my-3 ">
+                  <div class="d-flex justify-content-between">
+                    <label for="image-url-1" class="form-label fw-semibold">Teléfono</label>
+
+                  </div>
+
+                  <input type="number" id="image-url-1" class="form-control" placeholder="Teléfono" disabled>
+                </div>
+
+                <div class="col-md-6 my-3 ">
+                  <div class="d-flex justify-content-between">
+                    <label for="image-url-1" class="form-label fw-semibold">Nombre del botón</label>
+
+                  </div>
+                  <input type="text" id="image-url-1" class="form-control custom-button" placeholder="Nombre del botón"
+                    disabled>
+
+                </div>
+              </div>
 
             </form>
           </div>
@@ -819,7 +1002,9 @@
     </div>
 
 
-   
+
+
+
   </div>
   </div>
 
@@ -831,7 +1016,7 @@
   <script src="../../shared/libraries/bootstrap-5.3.3/js/bootstrap.bundle.min.js"></script>
 
   <script src="../../shared/js/menu.js"></script>
-  <script src="../../shared/js/moveCard.js"></script>
+  <!-- <script src="../../shared/js/moveCard.js"></script> -->
 </body>
 
 </html>
